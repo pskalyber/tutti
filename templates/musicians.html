@@ -1,0 +1,32 @@
+{% extends "layout.html" %} {% block body %}
+<div class="row">
+	<div class="col-xs-8 col-md-3">
+		<a href="{{ url_for('people') }}" class="thumbnail">
+			<img src="../static/images/marry.gif" alt="">
+		</a>
+	</div>
+	<div class="col-xs-4 col-md-6">
+		<h3>피아농 치는 사람들</h4>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-8 col-md-3">
+		<a href="{{ url_for('people') }}" class="thumbnail">
+			<img src="../static/images/event.gif" alt="">
+		</a>
+	</div>
+	<div class="col-xs-4 col-md-6">
+		<h3>바이올링 치는 사람들</h4>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-8 col-md-3">
+		<a href="{{ url_for('people') }}" class="thumbnail">
+			<img src="../static/images/marry.gif" alt="">
+		</a>
+	</div>
+	<div class="col-xs-4 col-md-6">
+		<h3>추파춥스 먹는 사람들</h4>
+	</div>
+</div>
+{% endblock %}
