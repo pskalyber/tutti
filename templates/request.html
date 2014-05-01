@@ -1,0 +1,72 @@
+ {% extends "layout.html" %} {% block body %}
+<form class="form-horizontal" role="form">
+	<div class="form-group">
+		<label class="col-xs-6 control-label">예약하시는 분의 성함을 알려주세요</label>
+		<div class="col-xs-4">
+			<input type="text" class="form-control" placeholder="이름">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label class="col-xs-6 control-label">전화번호</label>
+		<div class="col-xs-4">
+			<input type="text" class="form-control" placeholder="전화번호">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label class="col-xs-6 control-label">이메일</label>
+		<div class="col-xs-4">
+			<input type="text" class="form-control" placeholder="이메일">
+		</div>
+	</div>
+	
+	<div class="form-group">
+		<label class="col-xs-6 control-label">결혼식/이벤트 날짜 및 시간</label>
+		<div class="col-xs-4">
+			<input type="datetime-local" class="form-control">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label class="col-xs-6 control-label">결혼식/이벤트 장소를 알려주세요.</br>
+		 정해지지 않은 경우, '정해지지 않음'에 체크해주세요</label>
+		<div class="col-xs-4">
+			<textarea class="form-control" rows="5"></textarea>
+		</div>
+		<label class="col-xs-6 control-label"></label>
+		<div class="col-xs-4">
+			<div class="checkbox">
+				<label><input type="checkbox">정해지지 않음</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label class="col-xs-6 control-label">악기 구성</label>
+		<div class="col-xs-4">
+			<select class="form-control">
+				<option>장구</option>
+				<option>꽹과리</option>
+				<option>북</option>
+				<option>징</option>
+				<option>단소</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label class="col-xs-6 control-label">총 견적</label>
+		<div class="col-xs-4">
+			<input type="text" class="form-control" placeholder="0원">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label class="col-xs-6 control-label"></label>
+		<div class="col-xs-4">
+			<button type="submit" class="btn btn-default">신청하기</button>
+		</div>
+	</div>
+</form>
+{% endblock %}
