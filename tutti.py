@@ -16,7 +16,7 @@ from flask import Flask, request, session, url_for, redirect, \
 
 # configuration
 DATABASE = '/tmp/minitwit.db'
-DEBUG = True
+DEBUG = False
 SECRET_KEY = 'development key'
 
 # create our little application :)
@@ -80,4 +80,5 @@ def board():
 
 if __name__ == '__main__':
     #init_db()
-    app.run(host='0.0.0.0', port=81)
+    app.debug = True
+    app.run()
