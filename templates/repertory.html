@@ -8,9 +8,12 @@
 <div class="row">
 	<div class="col-sm-6 col-md-3">
 		<div class="thumbnail">
-			<button class="btn btn-default"><img class='repertory' data-toggle="modal" data-target="#selected" data-id="순대국밥" src="../static/images/marry.gif" alt="..."></button>
+			<button class="btn btn-default">
+				<img class='repertory' data-toggle="modal" data-target="#selected"
+					data-id="디즈니" src="../static/images/marry.gif" alt="...">
+			</button>
 			<div class="caption">
-				<h3>순대국밥 레퍼토리</h3>
+				<h3>Disney Repertory 디즈니 레퍼토리</h3>
 				<p>
 					킹왕짱, 우왕짱<br> 으하하, 푸하하<br> 낄낄낄, 울랄라<br>
 				</p>
@@ -19,7 +22,10 @@
 	</div>
 	<div class="col-sm-6 col-md-3">
 		<div class="thumbnail">
-			<button class="btn btn-default"><img class='repertory' data-toggle="modal" data-target="#selected" data-id="디즈니" src="../static/images/marry.gif" alt="..."></button>
+			<button class="btn btn-default">
+				<img class='repertory' data-toggle="modal" data-target="#selected"
+					data-id="디즈니" src="../static/images/marry.gif" alt="...">
+			</button>
 			<div class="caption">
 				<h3>디즈니 레퍼토리</h3>
 				<p>
@@ -30,7 +36,10 @@
 	</div>
 	<div class="col-sm-6 col-md-3">
 		<div class="thumbnail">
-			<button class="btn btn-default"><img class='repertory' data-toggle="modal" data-target="#selected" data-id="양념치킨" src="../static/images/marry.gif" alt="..."></button>
+			<button class="btn btn-default">
+				<img class='repertory' data-toggle="modal" data-target="#selected"
+					data-id="양념치킨" src="../static/images/marry.gif" alt="...">
+			</button>
 			<div class="caption">
 				<h3>양념치킨 레퍼토리</h3>
 				<p>
@@ -41,7 +50,10 @@
 	</div>
 	<div class="col-sm-6 col-md-3">
 		<div class="thumbnail">
-			<button class="btn btn-default"><img class='repertory' data-toggle="modal" data-target="#selected" data-id="찹살순대" src="../static/images/marry.gif" alt="..."></button>
+			<button class="btn btn-default">
+				<img class='repertory' data-toggle="modal" data-target="#selected"
+					data-id="찹살순대" src="../static/images/marry.gif" alt="...">
+			</button>
 			<div class="caption">
 				<h3>찹쌀순대 레퍼토리</h3>
 				<p>
@@ -57,7 +69,10 @@
 <div class="row">
 	<div class="col-sm-6 col-md-3">
 		<div class="thumbnail">
-			<button class="btn btn-default"><img class='repertory' data-toggle="modal" data-target="#selected" data-id="순대국밥" src="../static/images/marry.gif" alt="..."></button>
+			<button class="btn btn-default">
+				<img class='repertory' data-toggle="modal" data-target="#selected"
+					data-id="순대국밥" src="../static/images/marry.gif" alt="...">
+			</button>
 			<div class="caption">
 				<h3>순대국밥 레퍼토리</h3>
 				<p>
@@ -68,7 +83,10 @@
 	</div>
 	<div class="col-sm-6 col-md-3">
 		<div class="thumbnail">
-			<button class="btn btn-default"><img class='repertory' data-toggle="modal" data-target="#selected" data-id="디즈니" src="../static/images/marry.gif" alt="..."></button>
+			<button class="btn btn-default">
+				<img class='repertory' data-toggle="modal" data-target="#selected"
+					data-id="디즈니" src="../static/images/marry.gif" alt="...">
+			</button>
 			<div class="caption">
 				<h3>디즈니 레퍼토리</h3>
 				<p>
@@ -79,7 +97,10 @@
 	</div>
 	<div class="col-sm-6 col-md-3">
 		<div class="thumbnail">
-			<button class="btn btn-default"><img class='repertory' data-toggle="modal" data-target="#selected" data-id="양념치킨" src="../static/images/marry.gif" alt="..."></button>
+			<button class="btn btn-default">
+				<img class='repertory' data-toggle="modal" data-target="#selected"
+					data-id="양념치킨" src="../static/images/marry.gif" alt="...">
+			</button>
 			<div class="caption">
 				<h3>양념치킨 레퍼토리</h3>
 				<p>
@@ -90,7 +111,10 @@
 	</div>
 	<div class="col-sm-6 col-md-3">
 		<div class="thumbnail">
-			<button class="btn btn-default"><img class='repertory' data-toggle="modal" data-target="#selected" data-id="찹살순대" src="../static/images/marry.gif" alt="..."></button>
+			<button class="btn btn-default">
+				<img class='repertory' data-toggle="modal" data-target="#selected"
+					data-id="찹살순대" src="../static/images/marry.gif" alt="...">
+			</button>
 			<div class="caption">
 				<h3>찹쌀순대 레퍼토리</h3>
 				<p>
@@ -102,19 +126,36 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="selected" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="selected" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal"aria-hidden="true">&times;</button>
-				<h4 class="modal-title" id="repertoryName"></h4>
-			</div>
+
 			<div class="modal-body">
-				<div id=repertoryName> 레퍼토리는 참 좋아요</div>
+
+				<img id="repertory_img" src="">
+				<ul>
+					<li>화촉점화
+						<div id="candle"></div>
+					</li>
+					<li>신랑입장
+						<div id="groom"></div>
+					</li>
+					<li>신부입장
+						<div id="bride"></div>
+					</li>
+					<li>부모님께 인사
+						<div id="parent"></div>
+					</li>
+					<li>신랑신부 퇴장
+						<div id="walkoff"></div>
+					</li>
+				</ul>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-primary" data-dismiss="modal">닫기</button>
-				<a href="{{ url_for('request') }}"><button class="btn btn-success">신청하기</button></a>
+				<a href="{{ url_for('request') }}"><button
+						class="btn btn-success">신청하기</button></a>
 			</div>
 		</div>
 	</div>

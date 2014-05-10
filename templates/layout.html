@@ -1,41 +1,48 @@
 <!doctype html>
 <head>
-	<title>tutti, best day best music</title>
-	<meta http-equiv="X-UA-Compatible"" content="text/html; IE=edge; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tutti, best day best music</title>
+<meta http-equiv="X-UA-Compatible"
+	" content="text/html; IE=edge; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	
-	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
-	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap.css') }}">
-	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap-theme.css') }}">
-	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap-theme.css') }}">
-	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.js') }}"></script>
-	<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
-	<script type="text/javascript" src="{{ url_for('static', filename='js/tutti.js') }}"></script>
+
+<link rel=stylesheet type=text/css
+	href="{{ url_for('static', filename='css/style.css') }}">
+<link rel=stylesheet type=text/css
+	href="{{ url_for('static', filename='css/bootstrap.css') }}">
+<link rel=stylesheet type=text/css
+	href="{{ url_for('static', filename='css/bootstrap-theme.css') }}">
+<link rel=stylesheet type=text/css
+	href="{{ url_for('static', filename='css/bootstrap-theme.css') }}">
+<script type="text/javascript"
+	src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+<script type="text/javascript"
+	src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+<script type="text/javascript"
+	src="{{ url_for('static', filename='js/tutti.js') }}"></script>
 
 </head>
 <body>
 
-<div class='page'>
-	<h1>tutti</h1>
-	<h2>BEST DAY, BEST MUSIC</h2>
-	<div class=navigation>
-		<a href="{{ url_for('index') }}">HOME</a> | 
-		<a href="{{ url_for('about') }}">TUTTI</a> | 
-		<a href="{{ url_for('repertory') }}">REPERTORY</a> | 
-		<a href="{{ url_for('musicians') }}">MUSICIANS</a> | 
-		<a href="{{ url_for('contact') }}">CONTACT</a> |
-		<a href="{{ url_for('board') }}">BOARD</a> |
-		<a href="">BLOG</a>
-	</div>
+	<div class='page'>
+		<h1>tutti</h1>
+		<div id="links">
+			<img src="../static/images/icon_blog.png"> 
+			<img src="../static/images/icon_facebook.png">
+		</div>
+		<h2>BEST DAY, BEST MUSIC</h2>
+		
+		<div class=navigation>
+			<a href="{{ url_for('index') }}">HOME</a> | <a
+				href="{{ url_for('about') }}">TUTTI</a> | <a
+				href="{{ url_for('repertory') }}">REPERTORY</a> | <a
+				href="{{ url_for('musicians') }}">MUSICIANS</a> | <a
+				href="{{ url_for('board') }}">BOARD</a> |
+		</div>
 
-	<div class='body'>
-		{% block body %}{% endblock %}
-	</div>
+		<div class='body'>{% block body %}{% endblock %}</div>
 
-	<div class='footer'>
-		Copyright (c) Tutti. All Rights Reserved.
-	</div>
+		<div class='footer'>Copyright (c) Tutti. All Rights Reserved.</div>
 
-</div>
+	</div>
 </body>

@@ -32,7 +32,6 @@ def index():
     """
     return render_template('main.html')
 
-
 @app.route('/main')
 def logged_in_main():
     """Displays the main page with user information."""
@@ -62,12 +61,6 @@ def musicians():
 def people():
     """Displays the main page with user information."""
     return render_template('people.html')
-
-
-@app.route('/contact')
-def contact():
-    """Displays the main page with user information."""
-    return render_template('contact.html')
 
 @app.route('/board')
 def board():
